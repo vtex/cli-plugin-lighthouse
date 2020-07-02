@@ -24,7 +24,7 @@ export async function showReports(app: string | undefined, url: string | undefin
 
   try {
     const lighthouse = Lighthouse.createClient()
-    const reports = await lighthouse.getReports(app, url)
+    const reports = await lighthouse.getReports(app!, url!)
 
     spinner.stop()
 
