@@ -1,8 +1,14 @@
+.DS_Store
+.eslintcache
+.vscode
 *-debug.log
 *-error.log
 /.nyc_output
-/dist
 /build
-/package-lock.json
+/dist
 /tmp
+coverage
 node_modules
+yarn.lock
+oclif.manifest.json
+tsconfig.tsbuildinfo
