@@ -6,6 +6,7 @@
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
+    "@tiagonapoli/oclif-plugin-spaced-commands": "^0.0.6",
     "tslib": "^1"
   },
   "devDependencies": {
@@ -44,6 +45,7 @@
   "oclif": {
     "commands": "./build/commands",
     "bin": "oclif-example",
+    "plugins":["@tiagonapoli/oclif-plugin-spaced-commands"],
     "devPlugins": [
       "@oclif/plugin-help"
     ]
