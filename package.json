@@ -1,12 +1,11 @@
 {
-  "name": "@vtex/cli-plugin-lighthouse",
-  "description": "vtex plugin lighthouse",
+  "name": "cli-plugin-template",
+  "description": "vtex plugin template",
   "version": "0.0.0",
-  "bugs": "https://github.com/vtex/cli-plugin-lighthouse/issues",
+  "bugs": "https://github.com/vtex/cli-plugin-template/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
-    "@tiagonapoli/oclif-plugin-spaced-commands": "^0.0.6",
     "tslib": "^1"
   },
   "devDependencies": {
@@ -37,7 +36,7 @@
     "/oclif.manifest.json",
     "/yarn.lock"
   ],
-  "homepage": "https://github.com/vtex/cli-plugin-lighthouse",
+  "homepage": "https://github.com/vtex/cli-plugin-template",
   "keywords": [
     "oclif-plugin"
   ],
@@ -45,12 +44,11 @@
   "oclif": {
     "commands": "./build/commands",
     "bin": "oclif-example",
-    "plugins":["@tiagonapoli/oclif-plugin-spaced-commands"],
     "devPlugins": [
       "@oclif/plugin-help"
     ]
   },
-  "repository": "vtex/cli-plugin-lighthouse",
+  "repository": "vtex/cli-plugin-template",
   "scripts": {
     "build-clean": "rm -rf build",
     "build-incremental": "tsc --incremental",

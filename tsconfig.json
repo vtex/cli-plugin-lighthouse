@@ -5,15 +5,12 @@
     "importHelpers": true,
     "lib": ["es2018"],
     "module": "commonjs",
-    "noImplicitAny": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "outDir": "build",
     "rootDir": "src",
     "skipLibCheck": true,
     "strict": true,
     "target": "es2018",
-    "types": ["node", "jest"],
+    "types": ["node", "jest"]
   },
   "include": ["src/**/*"],
   "exclude": ["**/*.test.ts", "**/__tests__"]

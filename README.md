@@ -15,11 +15,11 @@ vtex plugin template
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @vtex/cli-plugin-lighthouse
+$ npm install -g cli-plugin-template
 $ oclif-example COMMAND
 running command...
 $ oclif-example (-v|--version|version)
-@vtex/cli-plugin-lighthouse/0.0.0 linux-x64 node-v14.0.0
+cli-plugin-template/0.0.0 linux-x64 node-v14.0.0
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
@@ -28,59 +28,25 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`oclif-example lighthouse:audit URL`](#oclif-example-lighthouseaudit-url)
-* [`oclif-example lighthouse:show`](#oclif-example-lighthouseshow)
+* [`oclif-example hello [FILE]`](#oclif-example-hello-file)
 
-## `oclif-example lighthouse:audit URL`
+## `oclif-example hello [FILE]`
 
-Run lighthouse audit over a specific url
-
-```
-USAGE
-  $ oclif-example lighthouse:audit URL
-
-OPTIONS
-  -h, --help     show CLI help
-  -j, --json     Return the report as json on stdout
-  -v, --verbose  Show debug level logs
-  --trace        Ensure all requests to VTEX IO are traced
-
-ALIASES
-  $ oclif-example lh:audit
-
-EXAMPLES
-  vtex lighthouse audit my.url.com
-  vtex lh audit my.url.com
-```
-
-_See code: [build/commands/lighthouse/audit.ts](https://github.com/vtex/cli-plugin-lighthouse/blob/v0.0.0/build/commands/lighthouse/audit.ts)_
-
-## `oclif-example lighthouse:show`
-
-Show previous saved audit reports, filtering by app and/or url
+describe the command here
 
 ```
 USAGE
-  $ oclif-example lighthouse:show
+  $ oclif-example hello [FILE]
 
 OPTIONS
-  -a, --app=app  App name to be filtered
-  -h, --help     show CLI help
-  -u, --url=url  Url to be filtered
-  -v, --verbose  Show debug level logs
-  --trace        Ensure all requests to VTEX IO are traced
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
 
-ALIASES
-  $ oclif-example lh:show
-
-EXAMPLES
-  vtex lighthouse show --app=vtex.awesome-app
-  vtex lighthouse show -u https://awesome.store.com
-  vtex lighthouse show -a vtex.awesome-app --url=https://awesome.store.com
-  vtex lh show --app=vtex.awesome-app
-  vtex lh show -u https://awesome.store.com
-  vtex lh show -a vtex.awesome-app --url=https://awesome.store.com
+EXAMPLE
+  $ oclif-example hello
+  hello world from ./src/hello.ts!
 ```
 
-_See code: [build/commands/lighthouse/show.ts](https://github.com/vtex/cli-plugin-lighthouse/blob/v0.0.0/build/commands/lighthouse/show.ts)_
+_See code: [build/commands/hello.ts](https://github.com/vtex/cli-plugin-template/blob/v0.0.0/build/commands/hello.ts)_
 <!-- commandsstop -->
