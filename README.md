@@ -17,7 +17,7 @@ $ npm install -g @vtex/cli-plugin-lighthouse
 $ oclif-example COMMAND
 running command...
 $ oclif-example (-v|--version|version)
-@vtex/cli-plugin-lighthouse/0.0.2 linux-x64 node-v12.18.3
+@vtex/cli-plugin-lighthouse/0.0.3 linux-x64 node-v12.20.0
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
@@ -35,7 +35,7 @@ Run lighthouse audit over a specific url
 
 ```
 USAGE
-  $ oclif-example lighthouse:audit URL
+  $ oclif-example lighthouse audit URL
 
 OPTIONS
   -h, --help     show CLI help
@@ -44,14 +44,14 @@ OPTIONS
   --trace        Ensure all requests to VTEX IO are traced
 
 ALIASES
-  $ oclif-example lh:audit
+  $ oclif-example lh audit
 
 EXAMPLES
   vtex lighthouse audit my.url.com
   vtex lh audit my.url.com
 ```
 
-_See code: [build/commands/lighthouse/audit.ts](https://github.com/vtex/cli-plugin-lighthouse/blob/v0.0.2/build/commands/lighthouse/audit.ts)_
+_See code: [build/commands/lighthouse/audit.ts](https://github.com/vtex/cli-plugin-lighthouse/blob/v0.0.3/build/commands/lighthouse/audit.ts)_
 
 ## `oclif-example lighthouse:show`
 
@@ -59,7 +59,7 @@ Show previous saved audit reports, filtering by app and/or url
 
 ```
 USAGE
-  $ oclif-example lighthouse:show
+  $ oclif-example lighthouse show
 
 OPTIONS
   -a, --app=app  App name to be filtered
@@ -69,7 +69,7 @@ OPTIONS
   --trace        Ensure all requests to VTEX IO are traced
 
 ALIASES
-  $ oclif-example lh:show
+  $ oclif-example lh show
 
 EXAMPLES
   vtex lighthouse show --app=vtex.awesome-app
@@ -80,5 +80,5 @@ EXAMPLES
   vtex lh show -a vtex.awesome-app --url=https://awesome.store.com
 ```
 
-_See code: [build/commands/lighthouse/show.ts](https://github.com/vtex/cli-plugin-lighthouse/blob/v0.0.2/build/commands/lighthouse/show.ts)_
+_See code: [build/commands/lighthouse/show.ts](https://github.com/vtex/cli-plugin-lighthouse/blob/v0.0.3/build/commands/lighthouse/show.ts)_
 <!-- commandsstop -->
