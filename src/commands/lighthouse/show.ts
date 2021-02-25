@@ -1,26 +1,35 @@
 import { flags as oclifFlags } from '@oclif/command'
 
-import { CustomCommand } from 'vtex'
+import { CustomCommand, ColorifyConstants, COLORS } from 'vtex'
+import chalk from 'chalk'
 import { showReports } from '../../modules/showReports'
 
 export default class ShowReports extends CustomCommand {
-  static description = 'Show previous saved audit reports, filtering by app and/or url'
+  static description = 'Shows a previous audit report, filtering by app and/or URL.'
 
   static examples = [
-    'vtex lighthouse show --app=vtex.awesome-app',
-    'vtex lighthouse show -u https://awesome.store.com',
-    'vtex lighthouse show -a vtex.awesome-app --url=https://awesome.store.com',
-    'vtex lh show --app=vtex.awesome-app',
-    'vtex lh show -u https://awesome.store.com',
-    'vtex lh show -a vtex.awesome-app --url=https://awesome.store.com',
+    `${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex lighthouse show')} --app=vtex.awesome-app`,
+    `${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex lighthouse show')} -u ${chalk.hex(COLORS.BLUE)(
+      'https://awesome.store.com'
+    )}`,
+    `${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex lighthouse show')} -a vtex.awesome-app --url=${chalk.hex(
+      COLORS.BLUE
+    )('https://awesome.store.com')}`,
+    `${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex lh show')} --app=vtex.awesome-app`,
+    `${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex lh show')} -u ${chalk.hex(COLORS.BLUE)(
+      'https://awesome.store.com'
+    )}`,
+    `${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex lh show')} -a vtex.awesome-app --url=${chalk.hex(COLORS.BLUE)(
+      'https://awesome.store.com'
+    )}`,
   ]
 
   static aliases = ['lh:show']
 
   static flags = {
     ...CustomCommand.globalFlags,
-    app: oclifFlags.string({ char: 'a', description: 'App name to be filtered' }),
-    url: oclifFlags.string({ char: 'u', description: 'Url to be filtered' }),
+    app: oclifFlags.string({ char: 'a', description: 'Filters by the specified app.' }),
+    url: oclifFlags.string({ char: 'u', description: 'Filters by the specified URL.' }),
   }
 
   async run() {
