@@ -1,4 +1,4 @@
-import { LighthouseReportDoc, ShortReportObject } from '../client/Lighthouse'
+import type { LighthouseReportDoc, ShortReportObject } from '../client/Lighthouse'
 
 export interface TableRow {
   [title: string]: any
@@ -16,6 +16,7 @@ export class TableGenerator {
    */
   public addReportScores(report: ShortReportObject[]) {
     const row = report.reduce((acc, audit) => {
+      // @ts-ignore
       acc[audit.title] = audit.score
 
       return acc
