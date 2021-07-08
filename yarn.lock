@@ -1052,15 +1052,17 @@
   resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.9.6.tgz#df9c3c8b31a247ec315e6996566be3171df4b3b1"
   integrity sha512-0/HnwIfW4ki2D8L8c9GVcG5I72s9jP5GSLVF0VIXDW00kmIpA6O33G7a8n59Tmh7Nz0WUC3rSb7PTY/sdW2JzA==
 
-"@types/ramda@0.25.24":
-  version "0.25.24"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.24.tgz#2f64ce2100271163247f93fa7b4b052db40ce155"
-  integrity sha512-c0TmWA7d4y9KLJJwL/cLPEfSReSgFQK9BtemcCATT48lMeyD7HG8IfGY8bamSuz/Byx1l+13hZV0PCvHsgMB3w==
-
 "@types/ramda@^0.27.14":
   version "0.27.38"
   resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.27.38.tgz#797d5cdc9e00482e665dfea28142bb6c3c5f11e7"
   integrity sha512-tZoQ0lv1WKkrpBHemL8yCkI9p8kUk/1PSMwhl0eeyqMQjD+2ePUtVLV8PpNS9Kq3OktObwOx9I3k+HumxTviRg==
+  dependencies:
+    ts-toolbelt "^6.15.1"
+
+"@types/ramda@^0.27.43":
+  version "0.27.43"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.27.43.tgz#3c0632a82479bccac7455ec77a2b1e43b326fe2f"
+  integrity sha512-AZ1q/rG/aBYszHxeZ9/0rzKyH7ghpkMwZSSZGZbCEX+fleRFPhKpXht/tYpyU65tDeXjkaafKd2Sp+PNB5wmGw==
   dependencies:
     ts-toolbelt "^6.15.1"
 
@@ -1185,6 +1187,45 @@
   version "3.77.0"
   resolved "https://registry.yarnpkg.com/@vtex/api/-/api-3.77.0.tgz#b5a4a2c34fc9c166f2acc0d6e8474d01114bba19"
   integrity sha512-y9e87H8VlxkFvCnEbSv+EGfEMsyN1470lsq6cQRPjmshbLjBEUm5+K6dv0Cnmiwl8LDB/sGGV73ZyKH5Zu5s4Q==
+  dependencies:
+    "@types/koa" "^2.0.48"
+    "@types/koa-compose" "^3.2.3"
+    "@wry/equality" "^0.1.9"
+    agentkeepalive "^4.0.2"
+    apollo-datasource "^0.3.1"
+    apollo-server-core "^2.4.8"
+    apollo-server-errors "^2.2.1"
+    archiver "^3.0.0"
+    axios "^0.18.0"
+    axios-retry "^3.1.2"
+    bluebird "^3.5.4"
+    chalk "^2.4.2"
+    co-body "^6.0.0"
+    cookie "^0.3.1"
+    dataloader "^1.4.0"
+    fs-extra "^7.0.0"
+    graphql "^0.13.2"
+    graphql-extensions "^0.5.7"
+    graphql-tools "^3.1.1"
+    graphql-upload "^8.0.4"
+    js-base64 "^2.5.1"
+    koa-compose "^4.1.0"
+    lru-cache "^5.1.1"
+    mime-types "^2.1.12"
+    p-limit "^2.2.0"
+    qs "^6.5.1"
+    querystring "^0.2.0"
+    ramda "^0.26.0"
+    rwlock "^5.0.0"
+    semver "^5.5.1"
+    stats-lite vtex/node-stats-lite#dist
+    tar-fs "^2.0.0"
+    xss "^1.0.6"
+
+"@vtex/api@^3.77.0":
+  version "3.77.1"
+  resolved "https://registry.yarnpkg.com/@vtex/api/-/api-3.77.1.tgz#7ac5ab2e9cd43e69c711399a6ed8daea6c19db82"
+  integrity sha512-Dm+fM3BGtGIygeajgQjEM5ZhGMpf5Pwd3y/uAhyGs3LdCQB5QyYfeUkl6td70PXJirNizQrEWt7jNE8s6Ww4dw==
   dependencies:
     "@types/koa" "^2.0.48"
     "@types/koa-compose" "^3.2.3"
@@ -2297,7 +2338,7 @@ binary@^0.3.0:
     buffers "~0.1.1"
     chainsaw "~0.1.0"
 
-bl@^4.0.3:
+bl@^4.0.3, bl@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/bl/-/bl-4.1.0.tgz#451535264182bec2fbbc83a62ab98cf11d9f7b3a"
   integrity sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w==
@@ -2610,6 +2651,14 @@ chalk@^4.0.0, chalk@^4.1.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
+chalk@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.1.tgz#c80b3fab28bf6371e6863325eee67e618b77e6ad"
+  integrity sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
 chalk@~2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.3.2.tgz#250dc96b07491bfd601e648d66ddf5f60c7a5c65"
@@ -2731,6 +2780,11 @@ cli-spinners@^2.2.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/cli-spinners/-/cli-spinners-2.5.0.tgz#12763e47251bf951cb75c201dfa58ff1bcb2d047"
   integrity sha512-PC+AmIuK04E6aeSs/pUccSujsTzBhu4HzC2dL+CfJB/Jcc2qTRbEwZQDfIUpt2Xl8BodYBEq8w4fc0kU2I9DjQ==
+
+cli-spinners@^2.5.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/cli-spinners/-/cli-spinners-2.6.0.tgz#36c7dc98fb6a9a76bd6238ec3f77e2425627e939"
+  integrity sha512-t+4/y50K/+4xcCRosKkA7W4gTr1MySvLV0q+PxmG7FJ5g+66ChKurYjxBCjHggHH3HA5Hh9cy+lcUGWDqVH+4Q==
 
 cli-table2@~0.2.0:
   version "0.2.0"
@@ -5350,6 +5404,11 @@ is-typedarray@^1.0.0, is-typedarray@~1.0.0:
   resolved "https://registry.yarnpkg.com/is-typedarray/-/is-typedarray-1.0.0.tgz#e479c80858df0c1b11ddda6940f96011fcda4a9a"
   integrity sha1-5HnICFjfDBsR3dppQPlgEfzaSpo=
 
+is-unicode-supported@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/is-unicode-supported/-/is-unicode-supported-0.1.0.tgz#3f26c76a809593b52bfa2ecb5710ed2779b522a7"
+  integrity sha512-knxG2q4UC3u8stRGyAVJCOdxFmv5DZiRcdlIaAQXAbSfJya+OhopNotLQrstBhququ4ZpuKbDc/8S6mgXgPFPw==
+
 is-utf8@^0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-utf8/-/is-utf8-0.2.1.tgz#4b0da1442104d1b336340e80797e865cf39f7d72"
@@ -6443,6 +6502,14 @@ log-symbols@^3.0.0:
   dependencies:
     chalk "^2.4.2"
 
+log-symbols@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-4.1.0.tgz#3fbdbb95b4683ac9fc785111e792e558d4abd503"
+  integrity sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==
+  dependencies:
+    chalk "^4.1.0"
+    is-unicode-supported "^0.1.0"
+
 log-update@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/log-update/-/log-update-4.0.0.tgz#589ecd352471f2a1c0c570287543a64dfd20e0a1"
@@ -7121,6 +7188,21 @@ ora@^4.0.3:
     is-interactive "^1.0.0"
     log-symbols "^3.0.0"
     mute-stream "0.0.8"
+    strip-ansi "^6.0.0"
+    wcwidth "^1.0.1"
+
+ora@^5.4.1:
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/ora/-/ora-5.4.1.tgz#1b2678426af4ac4a509008e5e4ac9e9959db9e18"
+  integrity sha512-5b6Y85tPxZZ7QytO+BQzysW31HJku27cRIlkbAXaNx+BdcVi+LlRFmVXzeF6a7JCwJpyw5c4b+YSVImQIrBpuQ==
+  dependencies:
+    bl "^4.1.0"
+    chalk "^4.1.0"
+    cli-cursor "^3.1.0"
+    cli-spinners "^2.5.0"
+    is-interactive "^1.0.0"
+    is-unicode-supported "^0.1.0"
+    log-symbols "^4.1.0"
     strip-ansi "^6.0.0"
     wcwidth "^1.0.1"
 
