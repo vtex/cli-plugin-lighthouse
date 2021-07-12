@@ -17,7 +17,7 @@ $ npm install -g @vtex/cli-plugin-lighthouse
 $ oclif-example COMMAND
 running command...
 $ oclif-example (-v|--version|version)
-@vtex/cli-plugin-lighthouse/0.1.1 linux-x64 node-v12.21.0
+@vtex/cli-plugin-lighthouse/0.1.1 linux-x64 node-v12.22.1
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
