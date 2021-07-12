@@ -17,7 +17,7 @@ $ npm install -g @vtex/cli-plugin-lighthouse
 $ oclif-example COMMAND
 running command...
 $ oclif-example (-v|--version|version)
-@vtex/cli-plugin-lighthouse/0.1.1 linux-x64 node-v12.21.0
+@vtex/cli-plugin-lighthouse/1.0.0 linux-x64 node-v12.22.1
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
@@ -54,7 +54,7 @@ EXAMPLES
   vtex lh audit my.url.com
 ```
 
-_See code: [build/commands/lighthouse/audit.ts](https://github.com/vtex/cli-plugin-lighthouse/blob/v0.1.1/build/commands/lighthouse/audit.ts)_
+_See code: [build/commands/lighthouse/audit.ts](https://github.com/vtex/cli-plugin-lighthouse/blob/v1.0.0/build/commands/lighthouse/audit.ts)_
 
 ## `oclif-example lighthouse:show`
 
@@ -83,5 +83,5 @@ EXAMPLES
   vtex lh show -a vtex.awesome-app --url=https://awesome.store.com
 ```
 
-_See code: [build/commands/lighthouse/show.ts](https://github.com/vtex/cli-plugin-lighthouse/blob/v0.1.1/build/commands/lighthouse/show.ts)_
+_See code: [build/commands/lighthouse/show.ts](https://github.com/vtex/cli-plugin-lighthouse/blob/v1.0.0/build/commands/lighthouse/show.ts)_
 <!-- commandsstop -->

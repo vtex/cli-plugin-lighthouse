@@ -1,21 +1,24 @@
 {
   "name": "@vtex/cli-plugin-lighthouse",
   "description": "vtex plugin lighthouse",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "bugs": "https://github.com/vtex/cli-plugin-lighthouse/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@tiagonapoli/oclif-plugin-spaced-commands": "^0.0.6",
+    "@vtex/api": "3.77.0",
+    "chalk": "^4.1.1",
+    "ora": "^5.4.1",
     "ramda": "^0.27.1",
     "tslib": "^1"
   },
   "devDependencies": {
-    "@types/ramda": "0.25.24",
     "@oclif/dev-cli": "^1",
     "@oclif/plugin-help": "^3",
     "@types/jest": "^26.0.3",
     "@types/node": "^14.0.14",
+    "@types/ramda": "0.27.14",
     "eslint": "^6.8.0",
     "eslint-config-oclif": "^3.1",
     "eslint-config-vtex": "^12.3.0",
